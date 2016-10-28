@@ -6,26 +6,11 @@
 </head>
 <body>
 	<script>
-	var a = 1, b = 1, c, d;
-	c = ++a; alert(c); // 2 по началу (а) прабавляет один, а потом С=а
-	d = b++; alert(d); // 1 d=b b=b+1
-	c = (2+ ++a); alert(c); // 5    2+(a=a+1) (тут а a=2)
-	d = (2+ b++); alert(d); // 4  тут b=2 (2+b)и b=b+1))
-	alert(a); // 3 к а прибавили 1 в 10 строке и ещё 1 в 12
-	alert(b); // 3 к b прибавили 1 в 11 строке и ещё 1 в 13
-
-	var z = 2;
-	var x = 1 + (z *= 2); //выведит 5 т.к x= 1+(z=z*2)
+	var b = "";
+	for (var i = 1; i <= 10; i++) {
+	b +="*";
+	console.log(b);
+}
 	</script>
-	<br><br>
-
-	<script>
-		for (var i = 1; i <= 100; i++) {
-			if ((i % 3 ==0)&(i % 5 !==0)) {document.write("Fizz ");}
-			else if ((i % 3 !==0)&(i % 5 ==0)) {document.write("Buzz ");}
-			else if ((i % 3 ==0)&(i % 5 ==0)) {document.write("FizzBuzz ");}
-			else document.write(i," ");
-		}
-	</script>
-</body>
+<body>
 </html>
