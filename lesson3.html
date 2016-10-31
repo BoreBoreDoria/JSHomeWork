@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Урок 2</title>
+</head>
+<body>
+	<script>
+for (var i = 0; i < 8; i++) {
+	var str = (i % 2 === 0) ? '' : '* '; 
+	for (var j = 0; str.length < 16; j++) {
+		str = (j % 2 === 0) ? (str + '# ') : (str + '* ');
+		}
+console.log(str);
+}
+</script>
+<body>
+</html>
+
+for (var i = 0; i < 8; i++) {
+  var res = (i % 2 === 0) ? '' : ' ';
+  for (var j = 0; res.length < 8; j++) {
+      res = (j % 2 === 0) ? (res + '#') : (res + ' ');
+  }
+  console.log(res);
+}
